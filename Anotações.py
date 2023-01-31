@@ -47,4 +47,7 @@ Type Inference - é quando o TS identifica e define o tipo de dados
 * Onde podemos determinar dois tipos para um dado
 * A sintaxe: number | string
 
+* Podemos utilizar condicionais para a validação do tipo de union types
+* Com isso e possivel trilhar rumos diferentes, baseado no tipo de dado
+* Para checar o tipo utilizamos typeof
 """
