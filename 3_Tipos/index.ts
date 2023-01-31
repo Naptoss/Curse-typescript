@@ -96,3 +96,12 @@ function advancedGreeting(firstName: string, lastName?: string) {
 }
 
 advancedGreeting("Antonio", "Gabinio")
+
+// 10 -Union Type
+
+function showBalance(balance: string | number) {
+    console.log(`o saldo da conta é R$${balance}`)
+}
+
+showBalance("10000")
+showBalance(10000)
