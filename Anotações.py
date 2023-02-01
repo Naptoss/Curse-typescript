@@ -50,4 +50,16 @@ Type Inference - é quando o TS identifica e define o tipo de dados
 * Podemos utilizar condicionais para a validação do tipo de union types
 * Com isso e possivel trilhar rumos diferentes, baseado no tipo de dado
 * Para checar o tipo utilizamos typeof
+
+* Type  Alias e um recurso que permite criar um tipo e determinar o que ele verifica
+* Desta maneira temos uma maneria mais facil de chamalo em vez de criar expressoes complexas com Union types
+
+* Uma outra maneira de nomear um tipo de objeto
+* Podemos determinar um nome para o tipo
+* E tambem escolher quais as propriedades e seus tipos
+
+* Na maioria das vezes pode optar entre qualquer um dos recursos sem problema 
+* A unica diferença e que interface pode ser alterada ao longo do codigo, já o alias nao
+* Ou seja, se pretendemos mudar como o tipo se conforma, devemos escolher a interface
+
 """
