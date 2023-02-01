@@ -71,3 +71,30 @@ function showBalance(balance) {
 }
 showBalance("10000");
 showBalance(10000);
+// 11 - Avançando em Union Types
+function showUserRoles(role) {
+    if (typeof role === "boolean") {
+        return "Usuario não aprovado!";
+    }
+    return console.log(`A função do usuario é: ${role}`);
+}
+showUserRoles(true);
+showUserRoles("Security Officer");
+function showID(id) {
+    console.log(`O ID é: ${id}`);
+}
+showID(1);
+showID("100");
+function peo(idade, nome) {
+    console.log(`O seu nome é ${nome} e voce tem ${idade}`);
+}
+peo(18, "Antonio");
+function showCoords(obj) {
+    console.log(`X:${obj.x} Y:${obj.y} Z:${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 20,
+};
+showCoords(coordObj);

@@ -105,3 +105,62 @@ function showBalance(balance: string | number) {
 
 showBalance("10000")
 showBalance(10000)
+
+
+// 11 - Avançando em Union Types
+
+function showUserRoles(role: boolean | string) {
+    if(typeof role === "boolean") {
+        return "Usuario não aprovado!"
+    }
+
+    return console.log(`A função do usuario é: ${role}`)
+
+}
+
+showUserRoles(true)
+showUserRoles("Security Officer")
+
+// 12 - Type Alias
+
+type ID = string | number
+
+function showID(id: ID) {
+    console.log(`O ID é: ${id}`)
+}
+
+showID(1)
+showID("100")
+
+type Nome = string 
+type Idade = string | number
+
+function peo(idade:Idade, nome:Nome) {
+    console.log(`O seu nome é ${nome} e voce tem ${idade}`)
+}
+
+peo(18, "Antonio")
+
+
+// 13 - Interface
+
+interface Point {
+    x: number
+    y: number
+    z: number
+
+
+}
+function showCoords(obj: {x:number,y:number,z:number}) {
+    console.log(`X:${obj.x} Y:${obj.y} Z:${obj.z}`)
+}
+
+const coordObj: Point = {
+    x: 10,
+    y: 15,
+    z: 20,
+}
+
+showCoords(coordObj)
+
+// 14 - 
