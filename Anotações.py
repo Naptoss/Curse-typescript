@@ -62,4 +62,30 @@ Type Inference - é quando o TS identifica e define o tipo de dados
 * A unica diferença e que interface pode ser alterada ao longo do codigo, já o alias nao
 * Ou seja, se pretendemos mudar como o tipo se conforma, devemos escolher a interface
 
+* Literal types é um recurso que permite colocar valores como tipos
+* Isso restrige o uso a não só tipos, como tambem os proprios valores
+* Este recurso é muito utilizado com Union types
+
+* As vezes o TypeScript pode evidenciar um erro, baseado em um valor que no momento do codiog ainda nao esta disponivel
+* Porem se sabemos que este valor sera preenchido, podemos evitar  o erro
+* Utilizase o caractere !
+
+* Com o tipo bigint podemos declarar numeros com valores muitos altos
+* Podemos utilizar a notação literal, exemplo: 100n 
+* Para este recurso precisamos mudar a configuração do TS, para versão minima de ES2020
+
+* De forma resumida, o symbol cira uma referencia unica para um valor
+* Ou seja, mesmo que possua o mesmo valor de outra variavel, teremos valores sendo considerados diferentes
+
+* Narrowing e um recurso de TS para identificar tipos de dados;
+* Dando assim uma direção diferente a execução do programa, baseada no tipo que foi identificado;
+* Há situações em que os tipos podem serm imprevisiveis, e queremos executar algo para cada uma das possibilidades
+* Isso e fundamental também para evitar erros do complidador, identificando e resolvendo os possiveis erros na hora do desenvolvimento
+
+* Narrowing:
+    ---> Type Guard:
+            * O type guard é basicamente uma validação do tipo utilizando o typeof
+            * Desta maneira podemos comparar o retorno do operador com um possivel tipo
+            * Todos os dados vem comom string, exemplo: "string", "number", "boolean"
+            * E a partidr disso realizamos as bifurcações
 """
