@@ -1,4 +1,9 @@
 "use strict";
+// Exc: 
+const numero1 = 8;
+const convertToString = numero1.toString();
+const printNumber = `o numero impresso em string foi ${convertToString}`;
+console.log(printNumber);
 // 1 - Arrays 
 let number = [1, 2, 3, 4];
 console.log(number[1]);
@@ -98,3 +103,31 @@ const coordObj = {
     z: 20,
 };
 showCoords(coordObj);
+const somePerson = { name: "Antonio", age: 18 };
+console.log(somePerson);
+// type personaType = {
+//     name: string
+// }
+// Aqui está sendo feito em Alias, se caso tirarem o commit ele vai retornar um erro de duplicidade 
+// type personaType = {
+//     age: number
+// }
+// 15 - Literal Types
+// let test = "testando"
+// da linha 194 ate a 198, nao tem como colocar mais de uma funcao na variavel,
+// por isso se usa o Literal Types, que e o oposto disso 
+// test = 
+// console.log(test)
+function direcao(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+direcao("Left");
+// 16 - Non-null Assertion Operator !
+let p = document.getElementById("some-p");
+console.log(p?.innerText);
+// 17 - Bigint
+let n;
+n = 1000n;
+console.log(n);
+// 18 - Symbol
+let sybolA = Symbol("a");

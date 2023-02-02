@@ -1,3 +1,11 @@
+// Exc: 
+const numero1: number = 8
+const convertToString = numero1.toString()
+
+const printNumber: string = `o numero impresso em string foi ${convertToString}`
+console.log(printNumber)
+
+
 // 1 - Arrays 
 let number: number[] = [1,2,3,4]
 console.log(number[1])
@@ -163,4 +171,61 @@ const coordObj: Point = {
 
 showCoords(coordObj)
 
-// 14 - 
+// 14 - Type Alias x Interface 
+
+interface persona {
+    name : string
+
+}
+
+interface persona {
+    age : number
+}
+
+const somePerson: persona = {name:"Antonio", age:18}
+
+
+console.log(somePerson)
+
+// type personaType = {
+//     name: string
+// }
+        // Aqui está sendo feito em Alias, se caso tirarem o commit ele vai retornar um erro de duplicidade 
+
+// type personaType = {
+//     age: number
+// }
+
+
+// 15 - Literal Types
+
+// let test = "testando"
+                            // da linha 194 ate a 198, nao tem como colocar mais de uma funcao na variavel,
+                            // por isso se usa o Literal Types, que e o oposto disso 
+// test = 
+
+// console.log(test)
+
+function direcao(direction: "Left"|"Up"|"right"|"down") { // <-- aqui eu consigo utilizar no literal types um Union Type
+    console.log(`A direção é: ${direction}`)
+} 
+
+direcao("Left")
+
+
+// 16 - Non-null Assertion Operator !
+
+let p = document.getElementById("some-p")
+console.log(p?.innerText)
+
+// 17 - Bigint
+
+let n: bigint
+n = 1000n
+
+console.log(n)
+
+// 18 - Symbol
+
+let sybolA = Symbol("a")
+
