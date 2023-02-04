@@ -14,4 +14,3 @@ function sum(a: number | string, b: number | string){
 
 sum("100", "59")
 sum(10,30)
-sum(10 + "30")
