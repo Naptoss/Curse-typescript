@@ -88,4 +88,16 @@ Type Inference - é quando o TS identifica e define o tipo de dados
             * Desta maneira podemos comparar o retorno do operador com um possivel tipo
             * Todos os dados vem comom string, exemplo: "string", "number", "boolean"
             * E a partidr disso realizamos as bifurcações
+    ---> Chegando se o valor existe:
+            * Em JavaScript podemos colocar uma variavel em um if, e se houver algum valor recebemos um true
+            * Quando não há valor um false
+            * Desta maneira conseguimos realizar o narrowing também, é uma outra estrategia bem utilizada
+    ---> Operador Instanceof:
+            * Para além dos tipos primitivos, podemos trabalhar como intanceof
+            * Checando se um dado pertence a uma determinada classe
+            * E ele via servir ate para as proprias classes
+    ---> Operador in:
+            * O operador in é utilizado para checar se existe uma propriedade no objeto
+            * Outro Recurso interessante para o narrowing
+            * Pois propriedades também podem ser opcionais
 """
