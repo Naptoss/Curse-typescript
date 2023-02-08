@@ -83,5 +83,34 @@ class Dog{
             this.breed = breed
         }
     }
+
 }
 
+
+const turca = new Dog("Turca")
+const bob = new Dog("bob", "Pastor Alemão")
+
+function showDogDetails(dog: Dog) {
+    if ('breed ' in dog) {
+        console.log(`O cachorro é da raça ${dog.breed}`)
+    } else{
+        console.log("O cachorro e um SRD")
+    }
+}
+
+showDogDetails(turca)
+showDogDetails(bob)
+
+
+
+
+
+function review(avaliacao: number | boolean) {
+    if(typeof avaliacao === "number") {
+        console.log(`a nota do cliente foi ${avaliacao}`)
+    } else{
+        console.log("O cliente nao deixou uma avaliacao")
+    }
+}
+
+review(false)
