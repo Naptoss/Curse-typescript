@@ -100,4 +100,13 @@ Type Inference - é quando o TS identifica e define o tipo de dados
             * O operador in é utilizado para checar se existe uma propriedade no objeto
             * Outro Recurso interessante para o narrowing
             * Pois propriedades também podem ser opcionais
+
+* Pode-se ter funções que nao retornam valores
+* Qual seria o tipo de dado indicado para essa situação ? 
+* Nesse caso se deve utilizar o void
+* Ele vai dizer ao TS que nao temos um valor de retorno 
+
+* Podemos inserir uma função de callback como argumento de função 
+* Nela conseguimso definir o tipo de argumento aceito pela callback
+* E também o tipo de retorno da mesma
 """
