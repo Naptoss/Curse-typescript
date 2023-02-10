@@ -109,4 +109,9 @@ Type Inference - é quando o TS identifica e define o tipo de dados
 * Podemos inserir uma função de callback como argumento de função 
 * Nela conseguimso definir o tipo de argumento aceito pela callback
 * E também o tipo de retorno da mesma
+
+* E uma estrategia para quando o tipo de retorno e relacionado ao tipo do argumento
+* Por exemplo: um item de uma array, pode ser string, boolean ou number
+* Normalmente são utilizadas letras como T ou U para definir os generics, e uma convencao
+
 """
